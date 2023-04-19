@@ -35,7 +35,7 @@ const App = () => {
         <p>{`Completed: ${el.completed}`}</p>
         <button onClick={() => completeTask(el.id)}>Complete</button>
         <button onClick={() => changeTitle(el.id)}>Change title</button>
-        <button onClick={() => deleteTask(el.id)}>Delete task</button>
+        <button onClick={() => deleteTask(el.id)}>Delete</button>
         <hr />
       </li>
       ))}

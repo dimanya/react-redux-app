@@ -9,9 +9,7 @@ export function taskReducer(state = [], action) {
         return newArray
       }
       case taskDeleted: {
-        let newArray = [...state]
-        newArray = newArray.filter(el=>el.id - 1===action.payload.id)
-        return newArray
+        return state.filter((el) => el.id !== action.payload.id)
       }
       default:
         return state
